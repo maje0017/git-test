@@ -77,3 +77,6 @@ nav a:hover::before,
 nav a:hover::after {
   transform: scaleX(1); /* Vis linjen ved hover */
 }
+
+Nav mig {
+}
