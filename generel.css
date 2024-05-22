@@ -1,23 +1,50 @@
 h1 {
+  font-family: "Yeseva One", serif;
+  font-size: 67px;
   color: var(--primary);
   margin-bottom: var(--space-sm);
 }
 
 h2 {
+  font-family: "Yeseva One", serif;
+  font-size: 45px;
+  color: var(--secondary);
+  margin-bottom: var(--space-sm);
+}
+
+h3 {
+  font-family: "Yeseva One", serif;
+  font-size: 30px;
+  color: var(--secondary);
+  margin-bottom: var(--space-sm);
+}
+
+h4 {
+  font-family: "Yeseva One", serif;
+  font-size: 20px;
   color: var(--secondary);
   margin-bottom: var(--space-sm);
 }
 
 p {
+  font-family: "Viaoda Libre", serif;
+  font-size: 20px;
   color: var(--tertiary);
   margin-block: var(--space-sm);
+  margin: 10px;
+}
+
+a {
+  font-family: "Viaoda Libre", serif;
+  font-size: 17px;
+  color: var(--tertiary);
 }
 
 html {
   --primary: #bada55;
   --secondary: #ff2291;
   --tertiary: #5000ca;
-  --space-sm: 1rem;
+  --space-sm: 0rem;
 }
 
 /* STYLING */
@@ -42,16 +69,29 @@ html {
 }
 
 /* Footer */
+
+.custom-hr {
+  border: 0;
+  height: 1px; /* This sets the height of the horizontal line */
+  background-color: #000; /* Change this to your desired color */
+  margin: 20px 0; /* Adjust the margin as needed */
+}
+
 .grid-container_footer {
-  padding: 10px;
+  padding: 1px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 10px;
+  align-items: end;
 }
 
 .display_1-1 {
-  font-family: "Viaoda Libre", serif;
-  font-weight: 400;
-  font-style: normal;
   text-align: center;
+}
+
+.margin-telefon {
+  margin: 6%;
+}
+
+.margin-social {
+  margin: 6%;
 }
