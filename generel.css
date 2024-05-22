@@ -1,3 +1,22 @@
 h1 {
-  color: blueviolet;
+  color: var(--primary);
+  margin-bottom: var(--space-sm);
+}
+
+h2 {
+  color: var(--secondary);
+  margin-bottom: var(--space-sm);
+}
+
+p {
+  color: var(--tertiary);
+  margin-block: var(--space-sm);
+}
+
+html {
+  --primary: #bada55;
+  --secondary: #ff2291;
+  --tertiary: #5000ca;
+
+  --space-sm: 1rem;
 }
