@@ -48,7 +48,7 @@ p {
   font-size: 20px;
   color: #000000;
   margin-block: var(--space-sm);
-  margin: 10px;
+  margin: 0px;
 }
 
 a {
