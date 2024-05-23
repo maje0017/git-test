@@ -66,8 +66,8 @@ html {
 * {
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
+  text-align: right;
 }
-
 /* Footer */
 
 .custom-hr {

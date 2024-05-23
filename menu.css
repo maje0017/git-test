@@ -1,16 +1,38 @@
-.nav {
-  text-align: right;
+.header {
+  display: flex; /* Brug flexbox layout */
+  justify-content: center; /* Centrerer indholdet */
+  align-items: center; /* Justerer elementerne centreret lodret */
+  padding: 0 20px; /* Tilføj lidt padding til venstre og højre */
 }
 
-nav ul {
+.navbar {
+  display: flex; /* Brug flexbox layout til navbaren */
+
+  width: 100%; /* Gør navbaren 100% bred */
+  position: relative; /* Position relativt til .header */
+}
+.logo {
+  position: fixed; /* Positioner logoet fast på siden */
+  top: 20px; /* Placer logoet 20px fra toppen */
+  left: 20px; /* Placer logoet 20px fra venstre kant */
+  z-index: 1000; /* Sørg for, at logoet er forrest på siden */
+}
+
+.logo img {
+  max-height: 80px; /* Juster størrelsen på logoet efter behov */
+  width: auto; /* Bevar billedets proportioner */
+}
+
+.nav {
+  display: flex; /* Flex layout for navigationen */
   list-style: none; /* Fjern standardpunktmarkeringer */
   margin: 0;
   padding: 0;
-  display: flex; /* Brug fleksibelt layout */
+  margin-left: auto; /* Flyt navigationen til højre side */
 }
 
-nav ul li {
-  margin-right: 15px; /* Afstand mellem menuelementer */
+.nav li {
+  margin: 0 15px; /* Afstand mellem menuelementer */
 }
 
 nav a {
@@ -18,65 +40,27 @@ nav a {
   color: #98a360; /* Standard tekstfarve */
   font-weight: bold; /* Fed skrifttype */
   transition: color 0.3s ease; /* Glat farveovergang */
-  position: relative; /* Gør det muligt at positionere ::before pseudo-element */
+  position: relative; /* Gør det muligt at positionere ::after pseudo-element */
   overflow: hidden; /* Skjul indholdet, der går ud over rammen */
-
   font-size: 20px; /* Størrelse på skriften (tilpass efter behov) */
 }
 
-nav a::before,
 nav a::after {
-  content: ""; /* Tilføjer et tomt indhold før og efter linkteksten */
+  content: ""; /* Tilføjer et tomt indhold efter linkteksten */
   position: absolute; /* Positioner element relativt til det nærmeste positionerede forældre */
-  width: 100%; /* Stretter det ud */
+  bottom: 0; /* Placerer det under teksten */
+  left: 0; /* Placerer det til venstre */
+  width: 100%; /* Stræk det ud */
   height: 2px; /* Højde på linjen */
   background-color: #98a360; /* Farve på linjen */
   transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1); /* Tilføj en tilpasset overgangseffekt */
+  transform: scaleX(0); /* Skjul linjen som standard */
 }
 
 nav a:hover {
   color: #98a360; /* Ændrer farven ved hover */
 }
 
-nav a::before {
-  content: ""; /* Tilføjer et tomt indhold før linkteksten */
-  position: absolute; /* Positioner element relativt til det nærmeste positionerede forældre */
-  bottom: -2px; /* Placerer det under teksten */
-  left: 0; /* Placerer det til venstre */
-  width: 100%; /* Stretter det ud */
-  height: 2px; /* Højde på linjen */
-  background-color: #98a360; /* Farve på linjen */
-  transition: transform 0.3s ease; /* Glat overgang for transformering */
-  transform: scaleX(0); /* Skjul linjen som standard */
-  top: 0; /* Placer før linjen over teksten */
-  transform: scaleX(0); /* Skjul linjen som standard */
-}
-nav a:hover::before {
-  transform: scaleX(1); /* Vis linjen ved hover */
-}
-
-nav a::after {
-  content: ""; /* Tilføjer et tomt indhold efter linkteksten */
-  position: absolute; /* Positioner element relativt til det nærmeste positionerede forældre */
-  bottom: -2px; /* Placerer det under teksten */
-  left: 0; /* Placerer det til venstre */
-  width: 100%; /* Stretter det ud */
-  height: 2px; /* Højde på linjen */
-  background-color: #98a360; /* Farve på linjen */
-  transition: transform 0.3s ease; /* Glat overgang for transformering */
-  transform: scaleX(0); /* Skjul linjen som standard */
-  bottom: 0; /* Placer efter linjen under teksten */
-  transform: scaleX(0); /* Skjul linjen som standard */
-}
-
 nav a:hover::after {
   transform: scaleX(1); /* Vis linjen ved hover */
-}
-
-nav a:hover::before,
-nav a:hover::after {
-  transform: scaleX(1); /* Vis linjen ved hover */
-}
-
-Nav mig {khkljh
 }
