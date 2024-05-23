@@ -9,3 +9,21 @@ h3 {
 p {
   text-align: center;
 }
+
+.grid1 {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
+  padding: 3em 0;
+}
+
+.col {
+  display: grid;
+  grid-column: 2 / 2;
+}
+
+.col1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-column: 5/4;
+  gap: 10px;
+}
