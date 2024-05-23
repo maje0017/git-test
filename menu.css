@@ -1,66 +1,114 @@
-.header {
-  display: flex; /* Brug flexbox layout */
-  justify-content: center; /* Centrerer indholdet */
-  align-items: center; /* Justerer elementerne centreret lodret */
-  padding: 0 20px; /* Tilføj lidt padding til venstre og højre */
-}
+/* MENU */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-.navbar {
-  display: flex; /* Brug flexbox layout til navbaren */
-
-  width: 100%; /* Gør navbaren 100% bred */
-  position: relative; /* Position relativt til .header */
-}
-.logo {
-  position: fixed; /* Positioner logoet fast på siden */
-  top: 20px; /* Placer logoet 20px fra toppen */
-  left: 20px; /* Placer logoet 20px fra venstre kant */
-  z-index: 1000; /* Sørg for, at logoet er forrest på siden */
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .logo img {
-  max-height: 80px; /* Juster størrelsen på logoet efter behov */
-  width: auto; /* Bevar billedets proportioner */
+  width: 200px;
+  height: 100%;
+  margin-top: 20px; /* Rykker menuen 30px ned */
+  padding: 10px;
 }
 
-.nav {
-  display: flex; /* Flex layout for navigationen */
-  list-style: none; /* Fjern standardpunktmarkeringer */
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
   margin: 0;
   padding: 0;
-  margin-left: auto; /* Flyt navigationen til højre side */
+  margin-top: 20px; /* Rykker menuen 30px ned */
 }
 
-.nav li {
-  margin: 0 15px; /* Afstand mellem menuelementer */
+.menu li {
+  margin-right: 20px;
 }
 
-nav a {
-  text-decoration: none; /* Fjern understregning på links */
-  color: #000000; /* Standard tekstfarve */
-  font-weight: bold; /* Fed skrifttype */
-  transition: color 0.3s ease; /* Glat farveovergang */
-  position: relative; /* Gør det muligt at positionere ::after pseudo-element */
-  overflow: hidden; /* Skjul indholdet, der går ud over rammen */
-  font-size: 20px; /* Størrelse på skriften (tilpass efter behov) */
+.menu li:last-child {
+  margin-right: 0;
 }
 
-nav a::after {
-  content: ""; /* Tilføjer et tomt indhold efter linkteksten */
-  position: absolute; /* Positioner element relativt til det nærmeste positionerede forældre */
-  bottom: 0; /* Placerer det under teksten */
-  left: 0; /* Placerer det til venstre */
-  width: 100%; /* Stræk det ud */
-  height: 2px; /* Højde på linjen */
-  background-color: #98a360; /* Farve på linjen */
-  transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1); /* Tilføj en tilpasset overgangseffekt */
-  transform: scaleX(0); /* Skjul linjen som standard */
+.menu a {
+  display: block;
+  padding: 10px;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s;
+  text-align: end;
+  font-family: "Prosto One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
 }
 
-nav a:hover {
-  color: #98a360; /* Ændrer farven ved hover */
+.menu a:hover {
+  color: orange;
 }
 
-nav a:hover::after {
-  transform: scaleX(1); /* Vis linjen ved hover */
+.burger {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  margin-top: 20px; /* Rykker menuen 30px ned */
+}
+
+.burger .line {
+  width: 100%;
+  height: 2px;
+  background-color: #333;
+  margin-bottom: 5px;
+  transition: 0.2s linear;
+}
+.burger {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .menu {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+  .burger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+    transition: 0.2s linear;
+  }
+
+  .burger.active .line:nth-child(2) {
+    opacity: 0;
+    transition: 0.15s linear;
+  }
+
+  .burger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+    transition: 0.2s linear;
+  }
+
+  nav.active .menu {
+    display: block;
+    background-color: #fff;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+
+  nav.active .menu li {
+    margin: 10px 20px;
+  }
+
+  nav.active .menu a {
+    font-size: 24px;
+  }
 }
