@@ -50,7 +50,7 @@ nav {
 }
 
 .menu a:hover {
-  color: orange;
+  color: 98a360;
 }
 
 .burger {
@@ -69,6 +69,36 @@ nav {
 }
 .burger {
   display: none;
+}
+
+nav a {
+  text-decoration: none; /* Fjern understregning på links */
+  color: #000000; /* Standard tekstfarve */
+  font-weight: bold; /* Fed skrifttype */
+  transition: color 0.3s ease; /* Glat farveovergang */
+  position: relative; /* Gør det muligt at positionere ::after pseudo-element */
+  overflow: hidden; /* Skjul indholdet, der går ud over rammen */
+  font-size: 20px; /* Størrelse på skriften (tilpass efter behov) */
+}
+
+nav a::after {
+  content: ""; /* Tilføjer et tomt indhold efter linkteksten */
+  position: absolute; /* Positioner element relativt til det nærmeste positionerede forældre */
+  bottom: 0; /* Placerer det under teksten */
+  left: 0; /* Placerer det til venstre */
+  width: 100%; /* Stræk det ud */
+  height: 2px; /* Højde på linjen */
+  background-color: #98a360; /* Farve på linjen */
+  transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1); /* Tilføj en tilpasset overgangseffekt */
+  transform: scaleX(0); /* Skjul linjen som standard */
+}
+
+nav a:hover {
+  color: #98a360; /* Ændrer farven ved hover */
+}
+
+nav a:hover::after {
+  transform: scaleX(1); /* Vis linjen ved hover */
 }
 
 @media screen and (max-width: 800px) {
