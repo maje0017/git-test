@@ -17,7 +17,6 @@ html {
   --primary: #bada55;
   --secondary: #ff2291;
   --tertiary: #5000ca;
-
   --space-sm: 1rem;
 }
 
@@ -41,4 +40,19 @@ html {
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
   text-align: right;
+}
+
+/* Footer */
+.grid-container_footer {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.display_1-1 {
+  font-family: "Viaoda Libre", serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
 }
