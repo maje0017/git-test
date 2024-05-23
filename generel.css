@@ -26,14 +26,14 @@ h3 {
 h4 {
   font-family: "Yeseva One", serif;
   font-size: 20px;
-  color: var(--secondary);
+  color: var(--primary);
   margin-bottom: var(--space-sm);
 }
 
 p {
   font-family: "Viaoda Libre", serif;
   font-size: 20px;
-  color: var(--tertiary);
+  color: #000000;
   margin-block: var(--space-sm);
   margin: 10px;
 }
@@ -46,7 +46,7 @@ a {
 
 html {
   --primary: #bada55;
-  --secondary: #ff2291;
+  --secondary: #000000;
   --tertiary: #5000ca;
   --space-sm: 0rem;
 }
