@@ -37,7 +37,7 @@
 
 nav a {
   text-decoration: none; /* Fjern understregning på links */
-  color: #98a360; /* Standard tekstfarve */
+  color: #000000; /* Standard tekstfarve */
   font-weight: bold; /* Fed skrifttype */
   transition: color 0.3s ease; /* Glat farveovergang */
   position: relative; /* Gør det muligt at positionere ::after pseudo-element */
