@@ -72,4 +72,6 @@
 
 .container_marker img {
   object-fit: cover;
+  width: auto;
+  height: 96px;
 }
