@@ -1,0 +1,27 @@
+/* cta in menu */
+.book_tid_cta_2 {
+  display: block;
+  text-align: center;
+  margin-top: -10px;
+}
+
+.book_tid_cta_2 {
+  border: 2px solid #98a360;
+  border-radius: 3em;
+  display: inline-block;
+  font-family: "Old Standard TT", serif;
+  font-size: 1em;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  width: auto;
+}
+
+.book_tid_cta_2 {
+  background-color: #f6f0e9;
+  stroke: #98a360;
+  color: black !important;
+}
+
+.book_tid_cta_2:hover {
+  background-color: #98a360;
+}
