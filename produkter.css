@@ -64,6 +64,11 @@
   text-align: left;
 }
 
+p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 .container_marker {
   padding: 32px;
   display: grid;
