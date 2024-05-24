@@ -2,28 +2,42 @@ h1 {
   text-align: center;
 }
 
-h3 {
+h2 {
   text-align: center;
 }
 
+h3 {
+  text-align: left;
+}
+
 p {
-  text-align: center;
+  text-align: left;
 }
 
 .grid1 {
   display: grid;
-  grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
+  grid-template-columns: 1fr 2fr 1fr 2fr 1fr;
   padding: 3em 0;
 }
 
 .col {
   display: grid;
   grid-column: 2 / 2;
+  gap: 10px;
 }
-
 .col1 {
   display: grid;
-  grid-template-columns: 1fr;
+
   grid-column: 5/4;
   gap: 10px;
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 2fr 1fr;
+  padding: 3em 0;
+}
+
+.col2 {
+  display: inline-block;
 }
