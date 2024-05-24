@@ -39,7 +39,7 @@
   }
 }
 
-.img {
+.container_main img {
   width: 722px;
   height: 688px;
   object-fit: cover;
@@ -62,4 +62,14 @@
 
 .h3 {
   text-align: left;
+}
+
+.container_marker {
+  padding: 1px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.container_marker img {
+  object-fit: cover;
 }
