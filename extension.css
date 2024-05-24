@@ -5,6 +5,7 @@
 
 .before_afters .before_after {
   position: relative;
+  margin: 4rem;
 }
 
 .before_afters .first {
