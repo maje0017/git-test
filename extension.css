@@ -1,0 +1,21 @@
+/**** FØR OG EFTER BILLEDERNE ****/
+.before_afters img {
+  width: 300px;
+}
+
+.before_afters .before_after {
+  position: relative;
+}
+
+.before_afters .first {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: z-index 0.5s ease, transform 0.6s ease;
+}
+
+.before_afters .before_after:hover .first {
+  z-index: 0;
+  transform: scale(1.05);
+}
