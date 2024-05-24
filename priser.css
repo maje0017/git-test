@@ -7,12 +7,10 @@ h2 {
 }
 
 h3 {
-  text-align: left;
   margin: 20px;
 }
 
 p {
-  text-align: left;
   margin: 20px;
 }
 
@@ -22,12 +20,12 @@ p {
   padding: 3em 0;
 }
 
-.col {
+.grid_1-1 {
   display: grid;
   grid-column: 2 / 2;
   gap: 10px;
 }
-.col1 {
+.grid_1-2 {
   display: grid;
 
   grid-column: 5/4;
