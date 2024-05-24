@@ -65,7 +65,7 @@
 }
 
 .container_marker {
-  padding: 1px;
+  padding: 32px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
