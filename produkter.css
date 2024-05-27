@@ -38,11 +38,6 @@ p {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
-.container_marker img {
-  width: auto;
-  height: 100px;
-}
-
 /* .container_main {
   grid-template-columns: 1fr;
 } */

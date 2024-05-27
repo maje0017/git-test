@@ -4,11 +4,18 @@ h1 {
 
 h2 {
   text-align: center;
+  font-size: 23px;
 }
 
 h3 {
   margin: 20px;
   text-align: left;
+  font-size: 23px;
+}
+
+.p1 {
+  margin: 20px;
+  text-align: center;
 }
 
 p {
@@ -18,6 +25,11 @@ p {
 
 h4 {
   text-align: center;
+}
+
+.baggrund {
+  background-color: #efe8e1;
+  padding: 1%;
 }
 
 .grid1 {
@@ -59,11 +71,11 @@ h4 {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   text-align: center;
   margin-top: 10px;
+  padding: 10px;
 }
 
 .oversigt_1 {
   display: grid;
-  padding: 10px;
   color: #333;
   text-decoration: none;
   transition: color 0.3s;
@@ -72,6 +84,15 @@ h4 {
   font-weight: 400;
   font-style: normal;
   font-size: 1rem;
+  border: 2px solid #98a360;
+  border-radius: 3em;
+  display: inline-block;
+  font-family: "Old Standard TT", serif;
+  font-size: 1em;
+  text-decoration: none;
+  padding: 1em 2em;
+  width: auto;
+  margin: 33px;
 }
 
 .oversigt_1:hover {
