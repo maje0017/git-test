@@ -88,7 +88,7 @@ nav {
     display: none;
     flex-direction: column; /* Stack menu items vertically */
     width: 100%; /* Full width for dropdown */
-    background-color: #fff; /* Background color for dropdown */
+    background-color: #f6f3f0; /* Background color for dropdown */
     position: absolute;
     top: 60px; /* Position below header */
     left: 0;
