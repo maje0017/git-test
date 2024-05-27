@@ -8,12 +8,12 @@ h2 {
 
 h3 {
   margin: 20px;
-  text-align: center;
+  text-align: left;
 }
 
 p {
   margin: 20px;
-  text-align: center;
+  text-align: left;
 }
 
 .grid1 {
@@ -102,5 +102,20 @@ p {
 }
 
 .book_tid_cta_2:hover {
-  background-color: #98a360;
+  background-color: #0000;
+}
+
+@media (max-width: 600px) {
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    align-items: end;
+  }
+
+  .grid3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    object-fit: cover;
+  }
 }
