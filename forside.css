@@ -117,3 +117,61 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+
+video {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+}
+
+@media (min-width: 750px) {
+  .hero_video {
+    margin-top: -100px;
+  }
+
+  #velkommen_text {
+    font-size: 68px;
+    padding-left: 346px;
+  }
+
+  #velkommen_text2 {
+    font-size: 80px;
+    top: 904px;
+    right: 370px;
+  }
+  .book_tid_cta_forside {
+    margin-top: 85px;
+    margin-bottom: 60px;
+  }
+
+  .blikfang,
+  .blikfang_2 {
+    text-align: center;
+    padding-left: 11rem;
+    padding-right: 11rem;
+  }
+  .blikfang_3 {
+    text-align: center;
+    margin: 1.5rem;
+    padding-top: 8rem;
+    font-size: 40px;
+    padding-bottom: 2rem;
+  }
+  .grid_1-1-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .profilbilleder {
+    width: 13rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .simone,
+  .pernille,
+  .mathilde,
+  .josefine {
+    margin-right: -10rem;
+    margin-left: -10rem;
+  }
+}
