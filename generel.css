@@ -113,3 +113,12 @@ html {
 .margin-social {
   margin: 6%;
 }
+
+@media (max-width: 600px) {
+  .grid-container_footer {
+    padding: 1px;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: end;
+  }
+}
