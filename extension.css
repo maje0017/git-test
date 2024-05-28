@@ -233,6 +233,11 @@
     text-align: center;
   }
 
+  .oplev_magi_text {
+    margin-bottom: 7rem;
+    margin-top: 1rem;
+  }
+
   .before_and_text {
     display: grid;
     grid-template-columns: 1fr 2fr;

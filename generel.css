@@ -99,11 +99,11 @@ html {
   padding: 1px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  align-items: end;
 }
 
 .display_1-1 {
   text-align: center;
+  padding-top: 3rem;
 }
 
 .display_1-2 {
