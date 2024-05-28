@@ -16,7 +16,6 @@ h3 {
 
 p {
   margin: 20px;
-  text-align: left;
 }
 
 h4 {
@@ -26,6 +25,7 @@ h4 {
 .baggrund {
   background-color: #efe8e1;
   padding: 1%;
+  margin-top: -1%;
 }
 
 .grid1 {
