@@ -26,39 +26,52 @@
   background-color: #0000;
 }
 /* mobile */
-@media screen and (max-width: 600px) {
-  .adresse {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: var(--widgets-spacing, 8px);
-    text-align: center;
-    margin-bottom: 6rem;
-    margin-top: 4rem;
-  }
-
-  .kontakt {
-    margin-bottom: 4rem;
-    margin-top: 15rem;
-    text-align: center;
-  }
-  .maps {
-    text-align: center;
-    margin-top: 6rem;
-  }
-  .timer {
-    text-align: center;
-    margin-top: 6rem;
-  }
+.adresse {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 6rem;
 }
+/* .adresse {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--widgets-spacing, 8px);
+  text-align: center;
+  margin-bottom: 6rem;
+  margin-top: 4rem;
+} */
+
+.kontakt {
+  margin-bottom: 4rem;
+  margin-top: 15rem;
+  text-align: center;
+}
+
+.timer {
+  text-align: center;
+  margin-top: 6rem;
+}
+.kontaktvid {
+  padding-right: 92px;
+  padding-left: 92px;
+}
+.kunder {
+  text-align: center;
+}
+
 @media screen and (min-width: 600px) {
-  .kontakt {
-    margin-bottom: 4rem;
+  /* .kontakt {
+    margin-dbottom: 4rem;
     margin-top: 12rem;
     text-align: center;
+  } */
+  .adresse {
+    flex-direction: row-reverse;
+    align-content: center;
   }
 
-  .adresse {
+  /* .adresse {
     display: flex;
     flex-direction: column;
     align-content: space-around;
@@ -67,13 +80,16 @@
     margin-left: 20rem;
     margin-top: 15rem;
     gap: var(--widgets-spacing, 15px);
-  }
+  } */
   .maps {
+    margin-right: 20rem;
   }
   .mynd1 {
   }
 
-  .mynd2 {
-    margin: 20rem;
+  .kontaktvid {
+    padding-left: 550px;
+  }
+  .textadresse {
   }
 }
