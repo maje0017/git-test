@@ -118,6 +118,10 @@ html {
   margin: 6%;
 }
 
+.footerh2 {
+  font-size: 23px;
+}
+
 @media (max-width: 600px) {
   .grid-container_footer {
     padding: 1px;
