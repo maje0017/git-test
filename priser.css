@@ -161,5 +161,32 @@ h4 {
     display: grid;
     grid-template-columns: 1fr;
     object-fit: cover;
+    margin: 20px;
+  }
+
+  h1 {
+    font-family: "Yeseva One", serif;
+    font-size: 24px;
+    padding-top: 20%;
+  }
+
+  h2 {
+    font-family: "Yeseva One", serif;
+    font-size: 20px;
+  }
+
+  h3 {
+    font-family: "Yeseva One", serif;
+    font-size: 16px;
+  }
+
+  p {
+    font-family: "Viaoda Libre", serif;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .oversigt {
+    font-size: 4px;
   }
 }

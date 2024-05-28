@@ -33,28 +33,145 @@
 
 .hero_img {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
 .velkommen_text {
-  grid-column: 4/5;
+  grid-column: 1/5;
   grid-row: 1/2;
 }
 
 #velkommen_text {
   color: black;
-  font-size: 20px;
+  font-size: 40px;
   top: 8px;
   right: 16px;
   font-weight: lighter;
+  padding-left: 16px;
+  padding-bottom: 50px;
 }
 
 .velkommen_text2 {
-  grid-column: 3/5;
+  grid-column: 2/6;
   grid-row: 2/3;
 }
 
 #velkommen_text2 {
-  font-size: 30px;
-  color: black;
+  font-size: 45px;
+  text-align: right;
+  position: absolute;
+  top: 420px;
+  right: 16px;
+}
+
+/* CTA */
+.book_tid_cta_forside {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.book_tid_cta_forside_1 {
+  border: 2px solid #98a360;
+  border-radius: 3em;
+  display: inline-block;
+  font-family: "Old Standard TT", serif;
+  font-size: 1.5em;
+  text-decoration: none;
+  padding: 1em 2em;
+  width: auto;
+}
+
+.book_tid_cta_forside_1 {
+  background-color: #f6f0e9;
+  stroke: #98a360;
+  color: #98a360 !important;
+}
+
+.book_tid_cta_forside_1:hover {
+  background-color: #98a360;
+}
+
+.blikfang {
+  margin: 1.2rem;
+  font-weight: bolder;
+}
+.blikfang_2 {
+  margin: 1.5rem;
+}
+
+.blikfang_3 {
+  margin: 1.5rem;
+  padding-top: 2rem;
+}
+
+.profilbilleder {
+  width: 13rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grid_1-1-1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+video {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+}
+
+@media (min-width: 750px) {
+  .hero_video {
+    margin-top: -100px;
+  }
+
+  #velkommen_text {
+    font-size: 68px;
+    padding-left: 346px;
+  }
+
+  #velkommen_text2 {
+    font-size: 80px;
+    top: 904px;
+    right: 370px;
+  }
+  .book_tid_cta_forside {
+    margin-top: 85px;
+    margin-bottom: 60px;
+  }
+
+  .blikfang,
+  .blikfang_2 {
+    text-align: center;
+    padding-left: 11rem;
+    padding-right: 11rem;
+  }
+  .blikfang_3 {
+    text-align: center;
+    margin: 1.5rem;
+    padding-top: 8rem;
+    font-size: 40px;
+    padding-bottom: 2rem;
+  }
+  .grid_1-1-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .profilbilleder {
+    width: 13rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .simone,
+  .pernille,
+  .mathilde,
+  .josefine {
+    margin-right: -10rem;
+    margin-left: -10rem;
+  }
 }
