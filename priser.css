@@ -188,5 +188,6 @@ h4 {
 
   .oversigt {
     font-size: 4px;
+    grid-template-columns: 1fr;
   }
 }
