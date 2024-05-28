@@ -109,7 +109,7 @@
 
 .musen {
   text-align: center;
-  margin-top: 6rem;
+  margin-top: 10rem;
 }
 
 .hoover_text,
@@ -226,6 +226,7 @@
     width: 100%;
     height: 750px;
     object-fit: cover;
+    margin-bottom: 10rem;
   }
 
   .oplev_magi_text,
@@ -270,7 +271,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin-bottom: 6rem;
-    margin-top: 3rem;
+    margin-top: 1rem;
   }
 
   .hover-image {
