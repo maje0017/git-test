@@ -59,9 +59,14 @@
 #velkommen_text2 {
   font-size: 45px;
   text-align: right;
+  margin-top: -60px;
+  margin-right: 27px;
+
+  /*
   position: absolute;
   top: 420px;
   right: 16px;
+  */
 }
 
 /* CTA */
