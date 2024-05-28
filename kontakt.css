@@ -25,3 +25,55 @@
 .book_tid_cta_2:hover {
   background-color: #0000;
 }
+/* mobile */
+@media screen and (max-width: 600px) {
+  .adresse {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--widgets-spacing, 8px);
+    text-align: center;
+    margin-bottom: 6rem;
+    margin-top: 4rem;
+  }
+
+  .kontakt {
+    margin-bottom: 4rem;
+    margin-top: 15rem;
+    text-align: center;
+  }
+  .maps {
+    text-align: center;
+    margin-top: 6rem;
+  }
+  .timer {
+    text-align: center;
+    margin-top: 6rem;
+  }
+}
+@media screen and (min-width: 600px) {
+  .kontakt {
+    margin-bottom: 4rem;
+    margin-top: 12rem;
+    text-align: center;
+  }
+
+  .adresse {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-left: 20rem;
+    margin-top: 15rem;
+    gap: var(--widgets-spacing, 15px);
+  }
+  .maps {
+  }
+  .mynd1 {
+  }
+
+  .mynd2 {
+    margin: 20rem;
+  }
+}
