@@ -43,11 +43,11 @@
 
 #velkommen_text {
   color: black;
-  font-size: 40px;
+  font-size: 33px;
   top: 8px;
   right: 16px;
   font-weight: lighter;
-  padding-left: 16px;
+  padding-left: 58px;
   padding-bottom: 50px;
 }
 
@@ -57,16 +57,10 @@
 }
 
 #velkommen_text2 {
-  font-size: 45px;
+  font-size: 36px;
   text-align: right;
-  margin-top: -60px;
-  margin-right: 27px;
-
-  /*
-  position: absolute;
-  top: 420px;
-  right: 16px;
-  */
+  margin-top: -58px;
+  margin-right: 62px;
 }
 
 /* CTA */
@@ -131,7 +125,7 @@ video {
 
 @media (min-width: 750px) {
   .hero_video {
-    margin-top: -100px;
+    margin-top: -142px;
   }
 
   #velkommen_text {
@@ -141,8 +135,7 @@ video {
 
   #velkommen_text2 {
     font-size: 80px;
-    top: 904px;
-    right: 370px;
+    padding-right: 285px;
   }
   .book_tid_cta_forside {
     margin-top: 85px;
@@ -176,7 +169,11 @@ video {
   .pernille,
   .mathilde,
   .josefine {
-    margin-right: -10rem;
+    margin-right: 0rem;
     margin-left: -10rem;
+  }
+
+  video {
+    padding: 86px;
   }
 }
