@@ -106,7 +106,7 @@
 }
 
 .profilbilleder {
-  width: 13rem;
+  width: 77%;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -145,8 +145,6 @@ video {
   .blikfang,
   .blikfang_2 {
     text-align: center;
-    padding-left: 11rem;
-    padding-right: 11rem;
   }
   .blikfang_3 {
     text-align: center;
@@ -160,20 +158,18 @@ video {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
   .profilbilleder {
-    width: 13rem;
+    width: 50%;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
   }
   .simone,
   .pernille,
   .mathilde,
   .josefine {
-    margin-right: 0rem;
-    margin-left: -10rem;
+    padding-bottom: 5rem;
   }
+}
 
-  video {
-    padding: 86px;
-  }
+video {
+  padding-right: 86px;
+  padding-left: 86px;
 }
