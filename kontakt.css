@@ -31,6 +31,7 @@
   flex-direction: column;
   text-align: center;
   margin-top: 6rem;
+  gap: var(--widgets-spacing, 8px);
 }
 /* .adresse {
   display: flex;
@@ -46,6 +47,7 @@
   margin-bottom: 4rem;
   margin-top: 15rem;
   text-align: center;
+  font-size: 1.5rem;
 }
 
 .timer {
@@ -53,11 +55,32 @@
   margin-top: 6rem;
 }
 .kontaktvid {
-  padding-right: 92px;
-  padding-left: 92px;
+  display: flex;
+  justify-content: center;
+}
+
+.maps {
+  margin-top: 6rem;
 }
 .kunder {
-  text-align: center;
+  background-color: #f8eee2; /* Light brown color */
+  width: 581px;
+  height: 419px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  margin-left: 600px;
+  margin-top: 106px;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  justify-content: center;
+}
+.nedralogo {
+  width: 13rem;
+  margin-top: 3rem;
+  margin-left: 9rem;
 }
 
 @media screen and (min-width: 600px) {
@@ -66,6 +89,9 @@
     margin-top: 12rem;
     text-align: center;
   } */
+  .kontakt {
+    font-size: 67px;
+  }
   .adresse {
     flex-direction: row-reverse;
     align-content: center;
@@ -82,14 +108,35 @@
     gap: var(--widgets-spacing, 15px);
   } */
   .maps {
-    margin-right: 20rem;
+    margin-right: 60px;
   }
   .mynd1 {
   }
 
   .kontaktvid {
-    padding-left: 550px;
+    padding-left: 800px;
+    margin-bottom: 60px;
   }
   .textadresse {
+    margin-right: 280px;
+    text-align: left;
+    margin-top: 16rem;
+  }
+  .footerh2 {
+    font-size: 23px;
+  }
+
+  .nedralogo {
+    width: 20rem;
+    margin-top: 4rem;
+  }
+  .custom-hrr {
+    margin-top: 270px;
+  }
+  .kunder {
+    position: absolute;
+  }
+  .timer {
+    margin-right: 320px;
   }
 }
